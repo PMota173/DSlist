@@ -7,7 +7,6 @@ import java.util.Objects;
 @Entity
 @Table(name = "tb_game")
 public class Game {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -37,6 +36,8 @@ public class Game {
         this.longDescription = longDescription;
     }
 
+    public Game() {
+    }
 
     public Long getId() {
         return id;
